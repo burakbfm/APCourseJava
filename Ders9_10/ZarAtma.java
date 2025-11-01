@@ -2,6 +2,8 @@ package DersKodlari.Ders9_10;
 
 public class ZarAtma {
 public static void main(String[] args) {
+        // int sayi = (int)(Math.random() * (max - min + 1)) + min;
+        
         // min = 1, max = 6
         // Formül: (int)(Math.random() * (6 - 1 + 1)) + 1
         // Basitleştirilmiş: (int)(Math.random() * 6) + 1
@@ -15,3 +17,4 @@ public static void main(String[] args) {
         System.out.println("Zarların toplamı: " + toplam);
     }
 }
+
