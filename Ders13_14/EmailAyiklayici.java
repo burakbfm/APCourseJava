@@ -15,7 +15,6 @@ public class EmailAyiklayici {
         
         String kullaniciAdi = email.substring(0,atIndeksi);
         System.out.println("Kullanıcı Adı: " + kullaniciAdi);
-
         // AMAÇ 2: Domain Adını Almak ("kodrix.net")
         // STRATEJİ: '@' karakterinden sonraki tüm karakterleri al.
         String domain = email.substring(atIndeksi+1);
