@@ -63,6 +63,6 @@ public class VeriKarsilastirma {
          * 2. “FIYAT:” ve “|” arasındaki metni bulmakiçin indexOf ve substring kullan.
          * 3. “ADET:” ten sonraki metni bulmakiçin indexOf ve substring kullan.
          */
-
+        String siparis = "URUN:KLAVYE|FIYAT:750|ADET:2";
     }
 }
