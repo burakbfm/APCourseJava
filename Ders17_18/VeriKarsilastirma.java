@@ -63,6 +63,32 @@ public class VeriKarsilastirma {
          * 2. “FIYAT:” ve “|” arasındaki metni bulmakiçin indexOf ve substring kullan.
          * 3. “ADET:” ten sonraki metni bulmakiçin indexOf ve substring kullan.
          */
-        String siparis = "URUN:KLAVYE|FIYAT:750|ADET:2";
+        String siparis = "URUN: KLAVYE | FIYAT:750 | ADET:2";
+        
+        // --- 1. Ürün adını bulalım ---
+        // Strateji: İlk ":" karakterinden başla, ilk "|" karakterine kadar al.
+        int urunBaslangic = siparis.indexOf(":") + 1;
+        int urunBitis = siparis.indexOf("|");
+        String urunAdi = siparis.substring(urunBaslangic, urunBitis);
+
+        // --- 2. Fiyatı bulalım ---
+        // Strateji: İlk "|" karakterinden *sonraki* ":" karakterini bul, 
+        // oradan başla ve bir sonraki "|" karakterine kadar al. 
+        int fiyatBaslangic = siparis.indexOf(":", urunBitis) + 1; 
+        int fiyatBitis = siparis.indexOf("|", fiyatBaslangic); 
+        String fiyatStr = siparis.substring(fiyatBaslangic, fiyatBitis); 
+
+        // --- 3. Adeti bulalım ---
+        // Strateji: İkinci "|" karakterinden (fiyatBitis) *sonraki* ":" 
+        // karakterini bul ve oradan String'in sonuna kadar git. 
+        int adetBaslangic = siparis.indexOf(":", fiyatBitis) + 1;
+        String adetStr = siparis.substring(adetBaslangic);
+
+        // --- Sonuçları Yazdıralım ---
+        // (Plandaki kod örneğinde sadece ürün adı ve fiyat yazdırılmıştı [cite: 149-151])
+        System.out.println("Ürün Adı:" + urunAdi);
+        System.out.println("Fiyat: " + fiyatStr);
+        System.out.println("Adet: " + adetStr);
+
     }
 }

@@ -21,19 +21,22 @@ public class FisOlusturucu {
         matematiksel işlemleri yapın
          */
 
-         // --- GİRDİLER / VERİLER ---
+         //1 --- GİRDİLER / VERİLER ---
         // Bu bölüm, fişte yer alacak ürün bilgilerini saklar.
         // 1. Ürün Bilgileri
+        String urun1_adi = "Süt";
+        double urun1_fiyat = 30.0;
+        int urun1_adet = 2;
         // 2. Ürün Bilgileri
         // 3. Ürün Bilgileri
         // Sabit Değerler
+        double kdvOrani = 0.18; 
 
-        
-        // --- HESAPLAMALAR ---
+        //2 --- HESAPLAMALAR ---
         // (Bu bölüm bir sonraki adımda yapılacak)
 
 
-        // --- ÇIKTI ---
+        //3 --- ÇIKTI ---
         // (Bu bölüm en son yapılacak)
 
         }
