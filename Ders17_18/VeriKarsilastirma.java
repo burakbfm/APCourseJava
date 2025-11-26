@@ -1,4 +1,4 @@
-package Ders17_18;
+package Ders17_18
 
 public class VeriKarsilastirma {
     public static void main(String[] args) {
