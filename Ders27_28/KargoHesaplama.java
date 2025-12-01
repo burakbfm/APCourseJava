@@ -1,4 +1,4 @@
-
+package Ders27_28;
 
 public class KargoHesaplama {
     public static void main(String[] var0) {
