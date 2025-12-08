@@ -7,11 +7,11 @@ public class odev2 {
         // başlattığımız gibi, çarpım değişkenini etkisiz eleman olan 1’den başlatmaları gerektiğini ipucu
         // olarakverebilirsiniz.
 
-        int toplam = 0;
+        int toplam = 1;
         int sayac = 1;
 
         while (sayac <= 5) {
-            toplam *= sayac; // toplam = toplam + sayac;
+            toplam *= sayac; // toplam = toplam * sayac;
             sayac++; // sayac = sayac + 1;
         }
         System.out.println("1'den 5'e kadar olan sayıların Çarpımı: " + toplam);
@@ -19,3 +19,4 @@ public class odev2 {
 
     }
 }
+1
