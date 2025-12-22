@@ -1,17 +1,20 @@
 package Ders40_41;
 
 public class Magpie {
-    public String getResponse(String statement) {
+    
+    public String getResponse(String cevap) {
         String response = "";
 
-        if (statement.indexOf("anne") >= 0 || statement.indexOf("annem") >= 0 ) {
+        if (cevap.indexOf("anne") >= 0 || cevap.indexOf("Anne") >= 0 ) {
             response = "Annen hakkında daha fazla anlatır mısın?";
-        } else if (statement.indexOf("baba") >= 0 || statement.indexOf("babam") >= 0) {
+        } else if (cevap.indexOf("baba") >= 0 || cevap.indexOf("Baba") >= 0) {
             response = "Baban hakkında daha fazla anlatır mısın?";
-        } else if (statement.indexOf("kardeş") >= 0) {
+        } else if (cevap.indexOf("kardeş") >= 0) {
             response = "Kardeşinle aran nasıl?";
-        } else if (statement.indexOf("nasılsın") >= 0) {
+        } else if (cevap.indexOf("nasılsın") >= 0) {
             response = "Ben bir yapay zekayım, duygularım yok ama seninle konuşmak güzel!";
+        } else if (cevap.indexOf("kız arkadaş") >= 0 || cevap.indexOf("sevgili") >= 0) {
+            response = "Kız arkadaşınla aran nasıl?";
         } else {
             int WhichResponse = (int)(Math.random() * 3);
     
@@ -27,7 +30,10 @@ public class Magpie {
 
         return response;
     }
-    public String sinirliMagpie(String isim) {
-        return isim + " DELLENDİM!!! BIRAKIN BENİ!!!";
+
+    public String sinirliMagpie() {
+
+        return "DELLENDİM!!! BIRAKIN BENİ!!!";
+        
     }
 }

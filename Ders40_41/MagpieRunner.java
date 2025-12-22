@@ -6,12 +6,13 @@ public class MagpieRunner {
 
         System.out.println("Merhaba! Ben Magpie. Konuşmak istediğin bir şey var mı?");
 
-        String userStatement = "aasdasdasdasdsadassasl";
+        String userStatement = "kız arkadaşımla kavga ettim";
         
         System.out.println("Sen: " + userStatement);
         System.out.println("Magpie: " + magpieBot.getResponse(userStatement));
+        System.out.println("Magpie: " + magpieBot.getResponse("Dostum nasılsın"));
+        System.out.println("Magpie sinirli hali: " + magpieBot.sinirliMagpie());
 
-        System.out.println("Magpie sinirli hali: " + magpieBot.sinirliMagpie("Ömer"));
     }
 }
 
