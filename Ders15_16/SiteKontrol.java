@@ -3,7 +3,7 @@ package Ders15_16;
 public class SiteKontrol {
     public static void main(String[] args) {
         // length() = String uzunluğu verir.
-        // indexOf() = Strinf ifade içindeki istediğimiz ilk ifadenin konumu verir
+        // indexOf() = String ifade içindeki istediğimiz ilk ifadenin konumu verir
         // substring() = belirtiğimiz aralıktaki string ifadeyi verir fakat son belitriğimizin - 1 kadarı substring(5,10) 5 9
         // equals() = equals sadece içerikleri kontrol eder yani nesneler farkl olsa bile sorun teşkil etmez
         // == nesneleride kontrol eder o yüzden içerikler aynı olsa bile nesneler farklı olursa hata verir.
