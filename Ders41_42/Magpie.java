@@ -14,7 +14,15 @@ public class Magpie {
         } else if (cevap.indexOf("nasılsın") >= 0) {
             response = "Ben bir yapay zekayım, duygularım yok ama seninle konuşmak güzel!";
         } else if (cevap.indexOf("kız arkadaş") >= 0 || cevap.indexOf("sevgili") >= 0) {
-            response = "Kız arkadaşınla aran nasıl?";
+            int WhichResponse = (int)(Math.random() * 3);
+            if (WhichResponse == 0) {
+                response = "Kız arkadaşın nasıl";
+            } else if (WhichResponse == 1) {
+                response = "İlk ne zaman görüştünüz";
+            } else {
+                response = "Kanka boşver";
+            }
+
         } else {
             int WhichResponse = (int)(Math.random() * 3);
     
