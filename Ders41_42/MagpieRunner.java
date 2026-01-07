@@ -1,4 +1,4 @@
-package Ders40_41;
+package Ders41_42;
 
 public class MagpieRunner {
     public static void main(String[] var0) {
