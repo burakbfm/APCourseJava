@@ -51,9 +51,15 @@ public class Ogrenci {
         this.notOrtalamasi = 0.0;
         this.MezunOlduMu = false;
     }
+
+    public Ogrenci(String isim){
+        this.isim = isim;
+        this.OkulNumarası = 0;
+        this.notOrtalamasi = 0.0;
+        this.MezunOlduMu = false;
+    }
     
     // --- Metotlar (Methods / Behaviors) ---
-
     public void bilgileriyazdirma(){
         System.out.println("******** Öğrenci Bilgileri ********");
         System.out.println("İsim: \t\t" + this.isim);
@@ -62,18 +68,16 @@ public class Ogrenci {
         System.out.println("Mezun Oldu Mu: \t" + this.MezunOlduMu);
     }
     
-    // Teori 1 
+    // Teori 1 (setter metotları)
     // void - geri dönüş yok
     // iş yapar, değiştirir biter
     // Bu bir mutator / setter
     // Bu metot bana bir şey ver demez, şunu değiştir.
-
     public void notGuncelle(double yeniortalama){
         this.notOrtalamasi = yeniortalama;
     }
 
-
-    // Teori 2
+    // Teori 2 (getter metotları)
     // String - dönecek veri tipi
     // return zorunlu
     // private değişkene güvenli erişim
@@ -81,10 +85,16 @@ public class Ogrenci {
         return this.isim;
     }
 
-    public Ogrenci(String isim){
-        this.isim = isim;
-        this.OkulNumarası = 0;
-        this.notOrtalamasi = 0.0;
-        this.MezunOlduMu = false;
-    }
+
+
+    // AYNI SINIFTAN FARKLI YOLLARLA NESNE OLUŞTURABİLİRİZ
+    // NESNELERE KOMUT VEREN METOTLAR(VOİD)
+    // NESNELERDEN BİLGİ ALAN METOTLAR(RETURN)
+
+    // CONSTRUCTOR KURALLARI
+    // 1. Constructor ismi sınıf ismi ile aynı olmalıdır.
+    // 2. Constructorların dönüş tipi yoktur. (void bile yazılmaz)
+    // 3. new ile çağrılır sonradan çaprılmaz.
+    // örnek: ogr1.Ogrenci() // HATALI -- new Ogrenci() // DOĞRU
+    // 4. Bir sınıfta birden fazla constructor olabilir (Overloading).
 }

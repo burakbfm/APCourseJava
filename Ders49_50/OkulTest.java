@@ -22,12 +22,6 @@ public class OkulTest {
         ogr3.bilgileriyazdirma();
 
 
-        // Bazı metotlar komut gibidir
-        // bilgileriyazdir() // komut
-    
-        // Bazı metotlar soru gibidir
-        // Math.sqrt(25) // soru cevap
-
         // Teori 1 
         // void Metotlar (Eylem metodları)
         // Bu metotlar bir eylem gerçekleştirir bir durumu değiştirir geriye bir değer döndürmediklkeri
@@ -45,6 +39,12 @@ public class OkulTest {
         ogr4.notGuncelle(85);
         ogr4.bilgileriyazdirma();
 
+
+        // -- GENEL ÖZET --
+        // Bazı metotlar komut gibidir
+        // bilgileriyazdir() // komut
+        // Bazı metotlar soru gibidir
+        // Math.sqrt(25) // soru cevap
 
     }
 }
