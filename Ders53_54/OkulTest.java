@@ -1,4 +1,4 @@
-package Ders51_52;
+package Ders53_54;
 
 public class OkulTest {
     public static void main(String[] var0) {
