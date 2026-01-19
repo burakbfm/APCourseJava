@@ -59,7 +59,7 @@ public class Ogrenci {
     }
 
     public void AktiviteYap(){
-        if (this.notOrtalamasi <= 97.9){
+        if (this.notOrtalamasi <= 98.0){
             this.notOrtalamasi += 2.0;
         } else {
             System.out.println(this.isim + " öğrencisinin not ortalaması zaten maksimum seviyede.");
@@ -94,6 +94,10 @@ public class Ogrenci {
         } else {
             return false;
         }
+    }
+
+    public boolean dahaMiBasarili(Ogrenci digerOgrenci) {
+        return this.notOrtalamasi > digerOgrenci.notOrtalamasiGetir();
     }
     
 }

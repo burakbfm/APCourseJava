@@ -25,5 +25,34 @@ public class OkulTest {
         ogrenci1.AktiviteYap();
         ogrenci1.AktiviteYap();
         System.out.println("Aktivite sonrası " + ogrenci1.isimGetir() + " öğrencisinin not ortalaması: " + ogrenci1.notOrtalamasiGetir());
+
+        System.out.println(ogrenci2.isimGetir() + " öğrencisinin not ortalaması: " + ogrenci2.notOrtalamasiGetir());
+        ogrenci2.notGuncelle(98.5);
+        System.out.println(ogrenci2.isimGetir() + " öğrencisinin not ortalaması: " + ogrenci2.notOrtalamasiGetir());
+
+        // Bu problemi çözmekiçin Ogrenci sınıfına yeni bir metot ekleyin. Bu metodun imzası şöyle
+        // olacaktır: public boolean dahaMiBasarili(Ogrenci digerOgrenci)
+
+        // Mantığı Açıklama: Bu metot çağrıldığında ( ogr1.dahaMiBasarili(ogr2) ), iki tane Ogrenci
+        // nesnesi vardır:
+
+        // 1. Metodun içinde olduğumuz nesne ( this ile temsil edilen, yani ogr1 ).
+        // 2. Metoda parametre olarak gelen nesne ( digerOgrenci ile temsil edilen, yani ogr2 ).
+
+        // Metodun içinde, “kendi” ortalamamız ( this.notOrtalamasi ) ile “diğer öğrencinin”
+        // ortalamasını ( digerOgrenci.getNotOrtalamasi() ) karşılaştırırız.
+
+        // Diğer öğrencinin private olan notOrtalamasi değişkenine doğrudan erişemediğimizi, bu
+        // yüzden onun public olan getNotOrtalamasi() metodunu kullanmakzorunda olduğumuzu
+        // vurgulayın (Kapsülleme’nin gücü!).
+
+        // Bu metodu Ogrenci.java ’ya ekleyin ve OkulTest.java içinden çağıraraktest edin.
+        
+
+        if (ogrenci1.dahaMiBasarili(ogrenci2)) {
+            System.out.println(ogrenci1.isimGetir() + " öğrencisi " + ogrenci2.isimGetir() + " öğrencisinden daha başarılı.");
+        } else {
+            System.out.println(ogrenci1.isimGetir() + " öğrencisi " + ogrenci2.isimGetir() + " öğrencisinden daha başarılı değil.");
+        }
     }
 }
