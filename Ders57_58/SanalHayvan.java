@@ -26,14 +26,22 @@ public class SanalHayvan {
     }
 
     // 3.davranışlar (public methods) 
+    public int getAclikSeviyesi() { 
+        return this.aclikSeviyesi; 
+    }
+    public int getMutlulukSeviyesi() { 
+        return this.mutlulukSeviyesi; 
+    }
+    // Davranış Metotları
     public void besle() {
-        aclikSeviyesi -=10;
-        if (aclikSeviyesi < 0) {
-            aclikSeviyesi = 0;
-        }
-        mutlulukSeviyesi +=10; 
-        if (mutlulukSeviyesi > 100) {
-            mutlulukSeviyesi = 100;
-        }
+        System.out.println(this.isim + " besleniyor...");
+        this.aclikSeviyesi -= 10; // Açlık azalır
+        this.mutlulukSeviyesi += 5; // Mutluluk biraz artar
+    }
+    
+    public void oyna() {
+        System.out.println(this.isim + " ile oynanıyor...");
+        this.mutlulukSeviyesi += 15; // Mutluluk artar
+        this.aclikSeviyesi += 5; // Açlık biraz artar
     }
 }
