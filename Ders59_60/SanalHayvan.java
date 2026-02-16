@@ -61,8 +61,21 @@ public class SanalHayvan {
         }
     }
 
-    // Zamangetir. aclık seviyesi artır, mutluluk seviyesi azalt
+    // Zamangecir. aclık seviyesi artır, mutluluk seviyesi azalt
     // aclık seviyesi ve mutlulyk sınırı geçmemeli
+
+    public void zamangecir() {
+        this.aclikSeviyesi += 10; // Açlık artar
+        if (this.aclikSeviyesi > 100) {
+            this.aclikSeviyesi = 100; // Açlık seviyesi 100'ün üstüne çıkmamalı
+            System.out.println(this.isim + " artık çok aç!");
+        }
+        this.mutlulukSeviyesi -= 15; // Mutluluk azalır
+        if (this.mutlulukSeviyesi < 0) {
+            this.mutlulukSeviyesi = 0; // Mutluluk seviyesi 0'ın altına düşemez
+            System.out.println(this.isim + " artık çok mutsuz!");
+        }
+    }
 
     // Oyun oynamak. mutluluk seviyesi artır, açlık seviyesi artır
     // mutluluk sınırı 100, açlık sınırı 100 geçmemeli
