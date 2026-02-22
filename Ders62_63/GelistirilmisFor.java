@@ -18,6 +18,13 @@ public class GelistirilmisFor {
         for (String takim : takimlar) {
             System.out.println(takim);
         }
+
+        // Dizinin elemanlarını değiştirmek, diziyi tersten gezmek, sadece çift/tek indesksleri işlemek.
+        // Aynı anda birdan fazla elemanı karşılaştırmak gibi indekse ihtiyaç duyulan alanlarda kullanılamaz.
+
+        // ÖDEV:
+        //String tipinde isimleri tutan bir dizi oluştursunlar. Geliştirilmiş for döngüsü kullanarak dizideki
+        // tüm isimleri “Merhaba, [İsim]!” formatında ekrana yazdıran bir program yazsınlar.
     }
     
 }

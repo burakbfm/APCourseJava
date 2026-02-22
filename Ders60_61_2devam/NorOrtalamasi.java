@@ -33,7 +33,7 @@ public class NorOrtalamasi {
                 enYuksekFiyat = fiyatlar[i];
             }
         }
-        System.out.println("En pahalı ürünün fiyatı: " + enYuksekFiyat);
+        System.out
     }
     
 
