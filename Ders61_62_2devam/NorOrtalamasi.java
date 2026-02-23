@@ -1,4 +1,4 @@
-package Ders60_61_2devam;
+package Ders61_62_2devam;
 
 public class NorOrtalamasi {
     public static void main(String[] var0) {
@@ -33,7 +33,6 @@ public class NorOrtalamasi {
                 enYuksekFiyat = fiyatlar[i];
             }
         }
-        System.out
     }
     
 

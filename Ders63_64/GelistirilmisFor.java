@@ -1,4 +1,4 @@
-package Ders62_63;
+package Ders63_64;
 
 public class GelistirilmisFor {
     public static void main(String[] var0) {

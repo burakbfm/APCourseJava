@@ -1,4 +1,4 @@
-package Ders60_61_2devam;
+package Ders61_62_2devam;
 
 public class ilkDizim {
     public static void main(String[] var0) {

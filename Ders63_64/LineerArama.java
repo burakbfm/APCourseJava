@@ -1,6 +1,4 @@
-package Ders62_63;
-
-import java.text.ListFormat.Style;
+package Ders63_64;
 
 public class LineerArama {
     public static void main(String[] var0) {
