@@ -22,4 +22,5 @@ public class Kitap {
     public String isimver() {
         return this.isim;
     }
+
 }

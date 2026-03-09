@@ -16,9 +16,15 @@ public class kutuphaneAnaliz {
         int toplamRomanSayfasi = 0;
 
         for (Kitap kitap : kutuphane) {
-            if (kitap.turuver().equals("roman")) {
+            if (kitap.turuver().equals("şiir")) {
                 toplamRomanSayfasi += kitap.sayfasayisiver();
             }
+        }
+        System.out.println("Kütüphanedeki şiir türündeki kitapların toplam sayfa sayısı: " + toplamRomanSayfasi);
+
+        for (int i = kutuphane.size() - 1; i >= 0; i--){
+            kutuphane.get(i);
+            kutuphane.get(i+1);
         }
         
         for (Kitap kitap : kutuphane) {
