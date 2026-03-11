@@ -20,8 +20,26 @@ public class EnMutluHayvaniBul {
             }
         }
 
-        System.out.println("En Mutlu Hayvan: " + enMutluHayvan.isimgetir() + " Mutluluk Seviyesi: " + enMutluHayvan.mutlulukseviyesigetir());
+        System.out.println("En Mutlu Hayvan: " + enMutluHayvan.isimgetir() + " Mutluluk Seviyesi: " 
+        + enMutluHayvan.mutlulukseviyesigetir());
+
+        // MUTLULUK SEVİYESİ 75'DEN YÜKSEK HAYVANLARI YENİ BİR LİSTEYE KAYIT YAPIN.
+        ArrayList<SanalHayvan> mutluhayvanlar = new ArrayList<>();
+
+        int mutluluksiniri = 75;
+        for (SanalHayvan hayvan: hayvanlar) {
+            if (hayvan.mutlulukseviyesigetir() > mutluluksiniri) {
+                mutluhayvanlar.add(hayvan);
+            }
+        }
+
+        System.out.println("*** Mutluluk Sınırı("+ mutluluksiniri +") üzerinde olan hayvanlar: ");
+        for (SanalHayvan mutluhayvan : mutluhayvanlar) {
+            System.out.println(mutluhayvan.isimgetir());
+        }
+
     }
 
-    // MUTLULUK SEVİYESİ 75'DEN YÜKSEK HAYVANLARI YENİ BİR LİSTEYE KAYIT YAPIN.
+
+    
 }
