@@ -15,6 +15,16 @@ public class SutunBaskinGezinme {
 
         }
 
+        // int[][] matris = { {10, 20, 30}, {40, 50, 60}, {70, 80, 90}, {100, 110, 120} };
+
+        // 1 ) int değerlerinden oluşan bir 2D dizi verin. Öğrencilerden, iç içe for döngülerini kullanarak bu
+        // dizideki tüm elemanların toplamını bulan bir program yazmalarını isteyin. (Bu, “biriktirici”
+        // algoritmasının 2D diziye uygulanmasıdır).
+
+        // 2 ) Öğrencilerden, “tüm elemanların toplamını bulan” ödevlerini bu sefer sütun-baskın dolaşma
+        // kullanarakyeniden yazmalarını isteyin.Sonucun yine aynı çıkması gerektiğini görmeleri, bu
+        // algoritma için gezinme sırasının sonucu değiştirmediğini anlamalarını sağlayacaktır.
+
 
     }
 
