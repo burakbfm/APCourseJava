@@ -35,11 +35,34 @@ public class Sosyalmesafe {
             }
         }
     }
+
     public static void main(String[] args) {
         int[][] sinemasalonu = { {0,1,1,0}, {1,1,1,0}, {0,0,1,1}};
-        int satir = 1;
+        int satir = 2;
         System.out.println("Önce: \t" + Arrays.toString(sinemasalonu[satir]));
         sosyalMesafeUygula(sinemasalonu, satir);
         System.out.println("Sonra: \t" + Arrays.toString(sinemasalonu[satir]));
+
+
+
+
+        System.out.println("**********************************");
+
+
+
+        int[][] sinemasalonu2 = {
+            {0, 1, 0, 0, 1, 1, 0},
+            {1, 0, 1, 1, 0, 0, 1},
+            {0, 0, 1, 0, 1, 1, 1},
+            {1, 1, 0, 1, 0, 0, 0},
+            {0, 1, 1, 0, 1, 0, 1}
+        };
+
+        int satir2 = 2;
+        System.out.println("2. Sinema Salonu Önce: " + Arrays.toString(sinemasalonu2[satir2]));
+        sosyalMesafeUygula(sinemasalonu2, satir2);
+        System.out.println("2. Sinema Salonu Sonra: " + Arrays.toString(sinemasalonu2[satir2]));
     }
 }
+
+
