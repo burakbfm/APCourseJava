@@ -15,7 +15,7 @@ public class Ilk2DDizim {
         // Boyut Öğrenme: Satır sayısı: diziAdi.length; (sinemasalonu.length;) - Sütun sayısı: diziAdi[0].length; (sinemasalonu[0].length;)
 
 
-        // 2 satır ve 3 sütundan oluşan bir 2D dizi oluşturalım.
+        // 2 satır ve 3 sütundan oluşan bir 2D dizi oluşturalım.1
         int[][] matris = new int[2][3];
 
         // 1. Satır, 2. sütuna (indeks 1 ve 2) bir değer atayalım
