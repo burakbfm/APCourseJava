@@ -14,4 +14,19 @@ public class GunlukVeri {
     public double getSicaklık() {
         return this.sicaklik_derece;
     }
+
+
+
+
+    ArrayList<int> sayilar = new ArrayList<Sayilar>();
+    sayilarr.add(5);
+    sayilarr.add(15);
+    sayilarr.add(18);
+    sayilarr.add(22);
+
+    int toplam = 0;
+    for(int x: sayilar){
+        toplam += x;
+    }
+
 }
